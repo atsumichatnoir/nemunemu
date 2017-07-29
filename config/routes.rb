@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   get 'cafe/homepage'
 
   get 'nemunemu/homepage'

@@ -132,11 +132,18 @@
     </div>
   </div>
 </div><br><br>
-  <% @blogs.each do |blog| %>
-        <p><td><%= blog.title %></br>
-        <td><%= blog.cotent %></p>
-    <% end %>
-
+  
+        
+        
+  
+    <% @blogs.each do |blog| %>
+    <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2><%= blog.title %></h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p><%= blog.cotent %></p>
+  <% end %>
 
 
 </body>

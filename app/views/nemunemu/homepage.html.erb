@@ -132,6 +132,10 @@
     </div>
   </div>
 </div><br><br>
+  <% @blogs.each do |blog| %>
+        <p><td><%= blog.title %></br>
+        <td><%= blog.cotent %></p>
+    <% end %>
 
 
 

@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   # POST /posts
   # POST /posts.json
-  def create
+,  def create
     @post = Post.new(post_params)
 
     respond_to do |format|
@@ -69,6 +69,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :post)
     end
 end
